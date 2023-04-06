@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "No Cache",
+  "version": "1.0",
+  "description": "Adds ?no_cache=1 to the current tab and reloads the page.",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_title": "No Cache",
+    "theme_icons": [
+      {
+        "light": "icon_light.png",
+        "dark": "icon_dark.png",
+        "size": 48
+      }
+    ]
+  },
+  "background": {
+    "scripts": ["content-script.js"]
+  }
+}
